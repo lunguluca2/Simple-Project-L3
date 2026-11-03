@@ -241,6 +241,18 @@ footer {
 	font-size: 0.85rem;
 }
 
+#galerie .galerie-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+#galerie img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
 	.input-group {
@@ -258,5 +270,11 @@ footer {
 
 	.hourly-grid {
 		grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+	}
+}
+
+@media (max-width: 599px) {
+	#galerie .galerie-grid {
+		grid-template-columns: 1fr;
 	}
 }
